@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <main>
         Questo è il corpo della pagina
-    </div>
+    </main>
 </template>
 
 
@@ -13,5 +13,7 @@ export default {
 
 
 <style scoped lang="scss">
-
+main {
+    min-height: 500px;
+}
 </style>

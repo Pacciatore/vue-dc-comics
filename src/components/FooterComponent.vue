@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <footer>
         Questo è il footer della pagina
-    </div>
+    </footer>
 </template>
 
 
@@ -13,5 +13,12 @@ export default {
 
 
 <style scoped lang="scss">
+footer {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
 
+    color: white;
+
+    min-height: 250px;
+}
 </style>
