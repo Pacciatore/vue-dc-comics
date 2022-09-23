@@ -2,9 +2,9 @@
     <footer class="fs-5">
 
         <!-- Main footer -->
-        <div class="container">
+        <div class="container d-flex justify-content-between">
 
-            <div class="w-50 d-flex py-5">
+            <div class="col-4 d-flex py-4">
 
                 <!-- First column -->
                 <div class="col-4">
@@ -57,6 +57,10 @@
                 </div>
 
             </div>
+
+            <div class="dc-footer-mark col-6">
+            </div>
+
         </div>
 
         <!-- Bottom footer -->
@@ -121,6 +125,13 @@ li a {
 
 li a:hover {
     color: $tr-dc-blue;
+}
+
+.dc-footer-mark {
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 // Bottom footer
