@@ -1,5 +1,5 @@
 <template>
-    <footer class="fs-5">
+    <footer class="fs-5 text-white">
 
         <!-- PreFooter Component Reference -->
         <PreFooterComponent />
@@ -94,8 +94,6 @@ export default {
 .main-footer {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
-
-    color: white;
 
     // Lista link
     ul {
