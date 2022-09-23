@@ -101,8 +101,6 @@ footer {
     background-size: cover;
 
     color: white;
-
-    min-height: 250px;
 }
 
 ul {
