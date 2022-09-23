@@ -65,11 +65,6 @@ export default {
 .pre-footer {
     background-color: $tr-dc-blue;
 
-    // For pre footer temporary position
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
     // Links
     a {
         color: inherit;

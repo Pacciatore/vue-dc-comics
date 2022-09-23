@@ -6,18 +6,13 @@
             -->CONTENT GOES HERE&lt;--
         </div>
 
-        <!-- PreFooterComponent Reference -->
-        <PreFooterComponent />
-
     </main>
 </template>
 
 
 <script>
-import PreFooterComponent from './PreFooterComponent.vue';
 export default {
     name: "MainComponent",
-    components: { PreFooterComponent }
 }
 </script>
 
@@ -29,8 +24,5 @@ main {
     min-height: 500px;
     background-color: black;
     color: white;
-
-    // For pre footer temporary position
-    position: relative;
 }
 </style>
