@@ -21,7 +21,8 @@ export default {
   name: 'App',
   data() {
     return {
-      headerNavLi: ['Characters',
+      headerNavLi: [
+        'Characters',
         'Comics',
         'Movies',
         'TV',
