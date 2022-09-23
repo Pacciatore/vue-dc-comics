@@ -143,6 +143,13 @@ li a:hover {
 
     text-transform: uppercase;
     border: 2px solid $tr-dc-blue;
+
+    transition: all 0.25s;
+}
+
+.sign-up-btn:hover {
+    color: $tr-dc-blue;
+    border-color: white;
 }
 
 .social-invite {
