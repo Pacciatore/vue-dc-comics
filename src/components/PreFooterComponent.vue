@@ -61,6 +61,7 @@ export default {
 <style scoped lang="scss">
 @import './variables.scss';
 
+// PreFooter
 .pre-footer {
     background-color: $tr-dc-blue;
 
@@ -68,30 +69,34 @@ export default {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
 
-.pre-footer a {
-    color: inherit;
-    text-decoration: none;
+    // Links
+    a {
+        color: inherit;
+        text-decoration: none;
 
-    transition: all 0.25s;
-}
+        transition: all 0.25s;
 
-.pre-footer a:hover {
-    color: $tr-dc-black;
-}
+        &:hover {
+            color: $tr-dc-black;
+        }
 
-.pre-footer span {
-    text-transform: uppercase;
-    font-weight: 300;
-}
+        // Testo
+        .span {
+            text-transform: uppercase;
+            font-weight: 300;
+        }
 
-.pre-footer-icon {
-    height: 60px;
-    padding-right: 10px;
-}
+        // Icona laterale
+        .pre-footer-icon {
+            height: 60px;
+            padding-right: 10px;
 
-.pre-footer-icon.svg {
-    width: 70px;
+            &.svg {
+                width: 70px;
+            }
+        }
+
+    }
 }
 </style>
