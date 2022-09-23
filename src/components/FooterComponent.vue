@@ -1,8 +1,8 @@
 <template>
     <footer class="fs-5 text-white">
 
-        <!-- PreFooter Component Reference -->
-        <PreFooterComponent />
+        <!-- TopFooter Component Reference -->
+        <TopFooterComponent />
 
         <!-- Main footer -->
         <div class="main-footer">
@@ -79,10 +79,10 @@
 
 <script>
 import BottomFooterComponent from './BottomFooterComponent.vue';
-import PreFooterComponent from './PreFooterComponent.vue';
+import TopFooterComponent from './TopFooterComponent.vue';
 export default {
     name: "FooterComponent",
-    components: { BottomFooterComponent, PreFooterComponent }
+    components: { BottomFooterComponent, TopFooterComponent }
 }
 </script>
 

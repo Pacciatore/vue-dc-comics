@@ -1,7 +1,7 @@
 <template>
 
-    <!-- Pre Footer -->
-    <div class="pre-footer">
+    <!-- Top Footer -->
+    <div class="top-footer">
 
         <div class="container d-flex py-5 justify-content-around align-items-center">
 
@@ -54,7 +54,7 @@
 
 <script>
 export default {
-    name: 'PreFooterComponent'
+    name: 'TopFooterComponent'
 }
 </script>
 
@@ -62,7 +62,7 @@ export default {
 @import './variables.scss';
 
 // PreFooter
-.pre-footer {
+.top-footer {
     background-color: $tr-dc-blue;
 
     // Links
