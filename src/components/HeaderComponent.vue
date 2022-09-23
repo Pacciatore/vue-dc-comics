@@ -1,7 +1,7 @@
 <template>
   <header>
 
-    <div class="container py-4">
+    <div class="container">
 
       <!-- Barra di navigazione -->
       <nav class="navbar navbar-expand-lg justify-content-between">
