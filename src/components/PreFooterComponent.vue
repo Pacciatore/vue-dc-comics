@@ -73,6 +73,12 @@ export default {
 .pre-footer a {
     color: inherit;
     text-decoration: none;
+
+    transition: all 0.25s;
+}
+
+.pre-footer a:hover {
+    color: $tr-dc-black;
 }
 
 .pre-footer span {
