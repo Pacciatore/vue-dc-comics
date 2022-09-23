@@ -88,36 +88,45 @@ footer {
     background-size: cover;
 
     color: white;
-}
 
-ul {
-    list-style-type: none;
-}
+    // Lista link
+    ul {
+        list-style-type: none;
 
-li:first-child {
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
+        // Titolo lista
+        li:first-child {
+            color: white;
+            font-weight: 400;
+            text-transform: uppercase;
 
-    cursor: default;
-}
+            cursor: default;
+        }
 
-li a {
-    text-decoration: none;
-    color: #ffffff5f;
-    font-weight: 300;
+        // Elementi lista
+        li a {
+            text-decoration: none;
+            color: #ffffff5f;
+            font-weight: 300;
 
-    transition: color 0.25s;
-}
+            transition: color 0.25s;
 
-li a:hover {
-    color: $tr-dc-blue;
-}
 
-.dc-footer-mark {
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+            &:hover {
+                color: $tr-dc-blue;
+            }
+
+        }
+
+
+    }
+
+    // Logo DC in background
+    .dc-footer-mark {
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
 }
 </style>
