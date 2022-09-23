@@ -67,15 +67,26 @@ export default {
   font-weight: 500;
   text-transform: uppercase;
 
+  position: relative;
+
   &:hover {
     color: $tr-dc-blue;
   }
 
   &.active {
     color: $tr-dc-blue;
-    border-bottom: 5px solid $tr-dc-blue;
   }
 
+  &.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -41px;
+
+    width: 100%;
+    height: 5px;
+    background-color: $tr-dc-blue;
+  }
 
 }
 </style>
