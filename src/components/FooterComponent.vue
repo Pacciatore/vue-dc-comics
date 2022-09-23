@@ -78,7 +78,7 @@
 
 
 <script>
-import BottomFooterComponent from './BottomFooterComponent.vue';
+import BottomFooterComponent from '@/components/BottomFooterComponent.vue';
 import TopFooterComponent from './TopFooterComponent.vue';
 export default {
     name: "FooterComponent",
