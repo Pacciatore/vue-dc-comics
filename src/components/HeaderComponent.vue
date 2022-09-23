@@ -49,7 +49,7 @@ export default {
 
 <style scoped lang="scss">
 // Import variabili
-@import './variables.scss';
+@import '@/components/style/variables.scss';
 
 .navbar-brand {
 

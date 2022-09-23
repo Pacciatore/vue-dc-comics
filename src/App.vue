@@ -15,7 +15,7 @@ import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
-import './components/fonts.css';
+import '@/components/style/fonts.css';
 
 export default {
   name: 'App',

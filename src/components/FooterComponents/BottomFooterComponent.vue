@@ -6,11 +6,11 @@
 
             <div class="socials col-4 d-flex align-items-center justify-content-around">
                 <div class="social-invite text-uppercase fs-3">Follow us</div>
-                <a href="#" class="social-link"><img src="../assets/img/footer-facebook.png" alt=""></a>
-                <a href="#" class="social-link"><img src="../assets/img/footer-twitter.png" alt=""></a>
-                <a href="#" class="social-link"><img src="../assets/img/footer-youtube.png" alt=""></a>
-                <a href="#" class="social-link"><img src="../assets/img/footer-pinterest.png" alt=""></a>
-                <a href="#" class="social-link"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                <a href="#" class="social-link"><img src="@/assets/img/footer-facebook.png" alt=""></a>
+                <a href="#" class="social-link"><img src="@/assets/img/footer-twitter.png" alt=""></a>
+                <a href="#" class="social-link"><img src="@/assets/img/footer-youtube.png" alt=""></a>
+                <a href="#" class="social-link"><img src="@/assets/img/footer-pinterest.png" alt=""></a>
+                <a href="#" class="social-link"><img src="@/assets/img/footer-periscope.png" alt=""></a>
             </div>
 
         </div>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import './variables.scss';
+@import '@/components/style/variables.scss';
 
 // Bottom footer
 .bottom-footer {

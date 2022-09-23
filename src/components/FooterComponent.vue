@@ -78,8 +78,8 @@
 
 
 <script>
-import BottomFooterComponent from '@/components/BottomFooterComponent.vue';
-import TopFooterComponent from './TopFooterComponent.vue';
+import BottomFooterComponent from '@/components/FooterComponents/BottomFooterComponent.vue';
+import TopFooterComponent from '@/components/FooterComponents/TopFooterComponent.vue';
 export default {
     name: "FooterComponent",
     components: { BottomFooterComponent, TopFooterComponent }
@@ -88,7 +88,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import './variables.scss';
+@import '@/components/style/variables.scss';
 
 // Main footer
 .main-footer {
