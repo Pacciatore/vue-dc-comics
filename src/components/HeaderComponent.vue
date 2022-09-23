@@ -13,8 +13,9 @@
 
         <!-- Elementi di navigazione -->
         <ul class="navbar-nav">
-          <li v-for="navElement in navLi" :key="navElement.text" class="nav-item item fs-5">
-            <a href="#" class="nav-link" :class="{active : navElement.active}">{{ navElement.text }}</a>
+          <li v-for="navElement in navLi" :key="navElement" class="nav-item item fs-5">
+            <a href="#" @click="setActive(navElement)" class="nav-link" :class="{active : activeIndex === navElement}">
+              {{ navElement }}</a>
           </li>
         </ul>
 
@@ -30,7 +31,17 @@
 export default {
   name: 'HeaderComponent',
   props: {
-    navLi: Array
+    navLi: Array,
+  },
+  data() {
+    return {
+      activeIndex: 'Comics'
+    }
+  },
+  methods: {
+    setActive(navElement) {
+      return this.activeIndex = navElement
+    }
   }
 }
 </script>
