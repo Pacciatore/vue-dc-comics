@@ -77,7 +77,7 @@ export default {
         }
 
         // Testo
-        .span {
+        span {
             text-transform: uppercase;
             font-weight: 300;
         }
