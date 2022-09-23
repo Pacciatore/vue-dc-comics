@@ -13,16 +13,9 @@
 
         <!-- Elementi di navigazione -->
         <ul class="navbar-nav">
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Characters</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link active">Comics</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Movies</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">TV</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Games</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Collectibles</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Videos</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Fans</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">News</a></li>
-          <li class="nav-item item fs-5"> <a href="#" class="nav-link">Shop</a></li>
+          <li v-for="navElement in navLi" :key="navElement.text" class="nav-item item fs-5">
+            <a href="#" class="nav-link" :class="{active : navElement.active}">{{ navElement.text }}</a>
+          </li>
         </ul>
 
       </nav>
@@ -36,6 +29,9 @@
 <script>
 export default {
   name: 'HeaderComponent',
+  props: {
+    navLi: Array
+  }
 }
 </script>
 

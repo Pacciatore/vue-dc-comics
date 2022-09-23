@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComponent />
+    <HeaderComponent :navLi="headerNavLi" />
     <MainComponent />
     <FooterComponent />
   </div>
@@ -19,6 +19,52 @@ import './components/fonts.css';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      headerNavLi: [
+        {
+          text: 'Characters',
+          active: false
+        },
+        {
+          text: 'Comics',
+          active: true
+        },
+        {
+          text: 'Movies',
+          active: false
+        },
+        {
+          text: 'TV',
+          active: false
+        },
+        {
+          text: 'Games',
+          active: false
+        },
+        {
+          text: 'Collectibles',
+          active: false
+        },
+        {
+          text: 'Videos',
+          active: false
+        },
+        {
+          text: 'Fans',
+          active: false
+        },
+        {
+          text: 'News',
+          active: false
+        },
+        {
+          text: 'Shop',
+          active: false
+        },
+      ]
+    }
+  },
   components: {
     HeaderComponent,
     MainComponent,
