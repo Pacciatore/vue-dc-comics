@@ -41,6 +41,7 @@ export default {
 
     .comic-series {
         font-weight: 300;
+        line-height: 1.25rem;
     }
 }
 </style>
