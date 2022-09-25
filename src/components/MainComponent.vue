@@ -39,7 +39,7 @@ export default {
 
 main {
     min-height: 500px;
-    background-color: black;
+    background-color: $tr-main-bg-black;
     color: white;
 }
 
