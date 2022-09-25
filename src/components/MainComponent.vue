@@ -4,8 +4,10 @@
         <div class="jumbotron"></div>
 
         <!-- Main content -->
-        <div class="main-content container fs-1">
-            -->CONTENT GOES HERE&lt;--
+        <div class="main-content position-relative container">
+
+            <div class="group-tag position-absolute fs-1 pt-1">Current Series</div>
+
         </div>
 
     </main>
