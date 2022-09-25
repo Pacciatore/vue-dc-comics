@@ -4,7 +4,11 @@
 
         <div v-for="(comic,index) in comics" :key="index" class="col-2">
 
-            <div class="comic-img-container">
+            <div class="comic-img-container position-relative">
+                <div class="comic-info pe-2 position-absolute d-flex flex-column align-items-end justify-content-end">
+                    <div class="comic-type text-capitalize">{{ comic.type }}</div>
+                    <div class="comic-price fs-5">{{ comic.price }}</div>
+                </div>
                 <img class="img-fluid" :src="comic.thumb" :alt="comic.series">
             </div>
 
@@ -37,6 +41,25 @@ export default {
     .comic-img-container {
         overflow-y: hidden;
         height: 200px;
+
+        .comic-info {
+            height: 100%;
+            width: 192px;
+
+            // Uso di colori rgba per permettere l'hover
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(255, 255, 255, 0);
+
+            transition: all 0.25s;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
     }
 
     .comic-series {
