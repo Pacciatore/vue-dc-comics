@@ -79,7 +79,7 @@ export default {
 
 
 <style lang="scss">
-@import '@/components/style/variables.scss';
+@import '@/assets/style/variables.scss';
 
 // Main footer
 .main-footer {
@@ -105,7 +105,7 @@ export default {
             color: #ffffff5f;
             font-weight: 300;
 
-            transition: color 0.25s;
+            transition: color $tr-hover-transition;
 
 
             &:hover {

@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/components/style/variables.scss';
+@import '@/assets/style/variables.scss';
 
 // Bottom footer
 .bottom-footer {
@@ -38,7 +38,7 @@ export default {
     text-transform: uppercase;
     border: 2px solid $tr-dc-blue;
 
-    transition: all 0.25s;
+    transition: all $tr-hover-transition;
 }
 
 .sign-up-btn:hover {

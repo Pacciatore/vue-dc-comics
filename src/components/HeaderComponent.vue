@@ -49,12 +49,12 @@ export default {
 
 <style scoped lang="scss">
 // Import variabili
-@import '@/components/style/variables.scss';
+@import '@/assets/style/variables.scss';
 
 .navbar-brand {
 
 
-  transition: all 0.25s;
+  transition: all $tr-hover-transition;
 
   &:hover {
     filter: grayscale(1) contrast(5)

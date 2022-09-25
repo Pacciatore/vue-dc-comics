@@ -58,9 +58,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/components/style/variables.scss';
+@import '@/assets/style/variables.scss';
 
-// PreFooter
+// Top Footer
 .top-footer {
     background-color: $tr-dc-blue;
 
@@ -69,7 +69,7 @@ export default {
         color: inherit;
         text-decoration: none;
 
-        transition: all 0.25s;
+        transition: all $tr-hover-transition;
 
         &:hover {
             color: $tr-dc-black;

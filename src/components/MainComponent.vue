@@ -44,7 +44,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import '@/components/style/variables.scss';
+@import '@/assets/style/variables.scss';
 
 main {
     min-height: 500px;

@@ -32,6 +32,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/style/variables.scss';
+
 .comic-container {
 
     row-gap: 2rem;
@@ -50,7 +52,7 @@ export default {
             background-color: rgba(0, 0, 0, 0);
             color: rgba(255, 255, 255, 0);
 
-            transition: all 0.25s;
+            transition: all $tr-hover-transition;
 
             cursor: pointer;
 
