@@ -8,6 +8,10 @@
 
             <div class="group-tag position-absolute fs-1 pt-1">Current Series</div>
 
+            <div class="container pt-5">
+                <ComicCardsComponent />
+            </div>
+
         </div>
 
     </main>
@@ -15,8 +19,10 @@
 
 
 <script>
+import ComicCardsComponent from '@/components/ComponentsUtils/ComicCardsComponent.vue';
 export default {
     name: "MainComponent",
+    components: { ComicCardsComponent }
 }
 </script>
 
@@ -40,5 +46,18 @@ main {
 
 .main-content {
     min-height: 300px;
+
+    .group-tag {
+        transform: translate(0, -50%);
+
+        background-color: $tr-dc-blue;
+        color: white;
+
+        padding: 0 40px;
+
+        text-transform: uppercase;
+    }
+
+
 }
 </style>
