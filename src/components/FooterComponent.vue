@@ -81,6 +81,7 @@ export default {
     // Lista link
     ul {
         list-style-type: none;
+        padding-left: 0;
 
         // Titolo lista
         li:first-child {
