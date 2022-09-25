@@ -14,9 +14,12 @@
                 <ComicCardsComponent :comics="currentSeries" />
             </div>
 
-            <!-- Bottone 'carica altri fumetti' -->
+            <!-- Bottone 'carica altri fumetti'
+                    Possibile implementazione: ripetizione dell'array per aumentare
+                    i fumetti visibili
+            -->
             <div class="text-center py-3">
-                <button class="group-tag fs-5 py-1">
+                <button class="group-tag btn rounded-0 fs-5 py-1">
                     Load more
                 </button>
             </div>
@@ -65,8 +68,16 @@ main {
 
     .group-tag {
 
+        // text: CURRENT SERIES
         &.position-absolute {
             transform: translate(0, -50%);
+        }
+
+        // text: LOAD MORE
+        // durata transition 0.15s ereditata da .btn di bootstrap
+        &.btn:hover {
+            color: $tr-dc-black;
+            cursor: pointer;
         }
 
         border: 0;
