@@ -20,9 +20,16 @@
 
 <script>
 import ComicCardsComponent from '@/components/ComponentsUtils/ComicCardsComponent.vue';
+import currentSeries from '@/data/dc-comics'
+
 export default {
     name: "MainComponent",
-    components: { ComicCardsComponent }
+    components: { ComicCardsComponent },
+    data() {
+        return {
+            currentSeries
+        }
+    }
 }
 </script>
 
@@ -51,11 +58,12 @@ main {
         transform: translate(0, -50%);
 
         background-color: $tr-dc-blue;
-        color: white;
-
         padding: 0 40px;
 
         text-transform: uppercase;
+        color: white;
+
+        cursor: default;
     }
 
 
