@@ -8,12 +8,12 @@
 
         <!-- Logo della pagina -->
         <a class="img-container navbar-brand" href="#">
-          <img src="../assets/img/dc-logo.png" alt="dc-logo">
+          <img src="@/assets/img/dc-logo.png" alt="dc-logo">
         </a>
 
         <!-- Elementi di navigazione -->
         <ul class="navbar-nav">
-          <li v-for="navElement in navLi" :key="navElement" class="nav-item item fs-5">
+          <li v-for="navElement in navLi" :key="navElement" class="nav-item item fs-5 px-1">
             <a href="#" @click="setActive(navElement)" class="nav-link" :class="{active : activeIndex === navElement}">
               {{ navElement }}</a>
           </li>
