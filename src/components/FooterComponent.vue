@@ -11,54 +11,20 @@
                 <!-- Footer Links -->
                 <div class="col-4 d-flex py-4">
 
-                    <!-- First column -->
+                    <!-- First column: Site navigation & Shops Links -->
                     <div class="col-4">
-                        <ul>
-                            <li class="fs-3">DC Comics</li>
-                            <li> <a href="#">Characters</a></li>
-                            <li> <a href="#">Comics</a></li>
-                            <li> <a href="#">Movies</a></li>
-                            <li> <a href="#">TV</a></li>
-                            <li> <a href="#">Games</a></li>
-                            <li> <a href="#">Videos</a></li>
-                            <li> <a href="#">News</a></li>
-                        </ul>
-
-                        <ul>
-                            <li class="fs-3">Shop</li>
-                            <li> <a href="#">Shop DC</a></li>
-                            <li> <a href="#">Shop DC Collectibles</a></li>
-                        </ul>
+                        <LinkListComponent :listArray="dcNavLinks" />
+                        <LinkListComponent :listArray="dcShops" />
                     </div>
 
-                    <!-- Second column -->
+                    <!-- Second column: DC Legal Links -->
                     <div class="col-4">
-                        <ul>
-                            <li class="fs-3">DC</li>
-                            <li> <a href="#">Terms of Use</a></li>
-                            <li> <a href="#">Privacy policy (New)</a></li>
-                            <li> <a href="#">Ad Choices</a></li>
-                            <li> <a href="#">Advertising</a></li>
-                            <li> <a href="#">Jobs</a></li>
-                            <li> <a href="#">Subscriptions</a></li>
-                            <li> <a href="#">Talent Workshops</a></li>
-                            <li> <a href="#">CPSC Certificates</a></li>
-                            <li> <a href="#">Ratings</a></li>
-                            <li> <a href="#">Shop Help</a></li>
-                            <li> <a href="#">Contact Us</a></li>
-                        </ul>
+                        <LinkListComponent :listArray="dcLegals" />
                     </div>
 
-                    <!-- Third column -->
+                    <!-- Third column: DC Sites Links -->
                     <div class="col-4">
-                        <ul>
-                            <li class="fs-3">Sites</li>
-                            <li> <a href="#">DC</a></li>
-                            <li> <a href="#">MAD Magazine</a></li>
-                            <li> <a href="#">DC Kids</a></li>
-                            <li> <a href="#">DC Universe</a></li>
-                            <li> <a href="#">DC Power Visa</a></li>
-                        </ul>
+                        <LinkListComponent :listArray="sitesList" />
                     </div>
 
                 </div>
@@ -80,14 +46,39 @@
 <script>
 import BottomFooterComponent from '@/components/FooterComponents/BottomFooterComponent.vue';
 import TopFooterComponent from '@/components/FooterComponents/TopFooterComponent.vue';
+import LinkListComponent from '@/components/ComponentsUtils/LinkListComponent.vue';
 export default {
     name: "FooterComponent",
-    components: { BottomFooterComponent, TopFooterComponent }
+    components: {
+        BottomFooterComponent,
+        TopFooterComponent,
+        LinkListComponent,
+    },
+    data() {
+        return {
+            dcNavLinks: {
+                title: 'DC Comics',
+                elements: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+            },
+            dcShops: {
+                title: 'Shop',
+                elements: ['Shop DC', 'Shop DC Collectibles']
+            },
+            dcLegals: {
+                title: 'DC',
+                elements: ['Terms of Use', 'Privacy policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshop', 'CPSC Certificates', 'Ratings', 'Shop Heplp', 'Contact Us']
+            },
+            sitesList: {
+                title: 'Sites',
+                elements: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
+            }
+        }
+    }
 }
 </script>
 
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '@/components/style/variables.scss';
 
 // Main footer
