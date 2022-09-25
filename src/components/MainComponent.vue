@@ -6,10 +6,19 @@
         <!-- Main content -->
         <div class="main-content position-relative container">
 
+            <!-- Titolo: Current Series -->
             <div class="group-tag position-absolute fs-1 pt-1">Current Series</div>
 
-            <div class="container py-5">
+            <!-- Raccolta: Fumetti attuali -->
+            <div class="container pt-5">
                 <ComicCardsComponent :comics="currentSeries" />
+            </div>
+
+            <!-- Bottone 'carica altri fumetti' -->
+            <div class="text-center py-3">
+                <button class="group-tag fs-5 py-1">
+                    Load more
+                </button>
             </div>
 
         </div>
@@ -55,8 +64,12 @@ main {
     min-height: 300px;
 
     .group-tag {
-        transform: translate(0, -50%);
 
+        &.position-absolute {
+            transform: translate(0, -50%);
+        }
+
+        border: 0;
         background-color: $tr-dc-blue;
         padding: 0 40px;
 
