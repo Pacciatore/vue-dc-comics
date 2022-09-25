@@ -8,8 +8,8 @@
 
             <div class="group-tag position-absolute fs-1 pt-1">Current Series</div>
 
-            <div class="container pt-5">
-                <ComicCardsComponent />
+            <div class="container py-5">
+                <ComicCardsComponent :comics="currentSeries" />
             </div>
 
         </div>
