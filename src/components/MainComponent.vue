@@ -32,15 +32,12 @@
 
 <script>
 import ComicCardsComponent from '@/components/ComponentsUtils/ComicCardsComponent.vue';
-import currentSeries from '@/data/dc-comics'
 
 export default {
     name: "MainComponent",
     components: { ComicCardsComponent },
-    data() {
-        return {
-            currentSeries
-        }
+    props: {
+        currentSeries: Array
     }
 }
 </script>

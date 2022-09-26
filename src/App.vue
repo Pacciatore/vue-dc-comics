@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent :navLi="headerNavLi" />
-    <MainComponent />
+    <MainComponent :currentSeries="currentComics" />
     <FooterComponent />
   </div>
 </template>
@@ -15,12 +15,17 @@ import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
+// Import data
+import currentComics from '@/data/dc-comics'
+
+// Import page font
 import '@/assets/style/fonts.css';
 
 export default {
   name: 'App',
   data() {
     return {
+      currentComics,
       headerNavLi: [
         'Characters',
         'Comics',
