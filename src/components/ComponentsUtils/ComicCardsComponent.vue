@@ -1,11 +1,10 @@
 <template>
-
     <div class="comic-container d-flex flex-wrap pt-3 g-0">
 
-        <div v-for="(comic,index) in comics" :key="index" class="col-2">
+        <div v-for="(comic, index) in comics" :key="index" class="col-2">
 
             <!-- Comic thumb -->
-            <div class="comic-thumb position-relative">
+            <div class="comic-thumb position-relative me-2">
 
                 <!-- Displays on hover -->
                 <div class="comic-info pe-2 position-absolute d-flex flex-column align-items-end justify-content-end">
@@ -26,7 +25,6 @@
         </div>
 
     </div>
-
 </template>
 
 <script>
@@ -53,7 +51,7 @@ export default {
 
         .comic-info {
             height: 100%;
-            width: 192px;
+            width: 100%;
 
             // Uso di colori rgba per permettere l'hover
             background-color: rgba(0, 0, 0, 0);
